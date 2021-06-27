@@ -1,4 +1,4 @@
-<h4 class="ui center aligned medium icon header" style="margin-top: 50px;">
+<h4 class="ui center aligned medium icon header">
   <i class="circular orange coffee icon"></i>
   Say Something
 </h4>
@@ -8,20 +8,19 @@
     <div class="ui fluid raised card chatbox">
       <div class="content">
         <div class="ui feed">
-          <h4 class="ui header">Followers Activity</h4>
-            <%= render @messages %>
+          <%= render @messages %>
         </div>
       </div>
-        <div class="extra content">
-          <form class="ui reply form">
-            <div class="field">
-              <div class="ui fluid icon input">
-                <input type="text" placeholder="Enter a message...">
-                <i class="bordered inverted orange edit icon"></i>
-              </div>
+      <div class="extra content">
+        <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path) do |f| %>
+          <div class="field">
+            <div class="ui fluid icon input">
+              <%= f.text_field :body %>
+              <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html_safe %>
             </div>
-          </form>
-        </div>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 
