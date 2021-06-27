@@ -14,6 +14,6 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-$(document).ready(function() {
+$(document).on('turbolinks:load', function() {
   $(`.ui.dropdown`).dropdown()
 });
