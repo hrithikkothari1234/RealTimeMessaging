@@ -4,19 +4,30 @@
 // that code so it'll be compiled.
 //= require jquery
 //= require semantic-ui
+//= require_tree .
+
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import '@doabit/semantic-ui-sass'
+//= require project_wide
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+function scroll_bottom() {
+  if ($('#messages').length > 0) {
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
+  }
+}
 
 $(document).on('turbolinks:load', function() {
   $(`.ui.dropdown`).dropdown()
   $('.message .close').on('click', function() {
     $(this).closest('.message').transition('fade');
   });
+  scroll_bottom();
 });
+
