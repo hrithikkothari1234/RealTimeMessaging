@@ -3,10 +3,10 @@
 Preview:
 
 * Login Page
-![](https://github.com/[hrithikkothari1234]/RealTimeMessaging/blob/master/assets/messageme_loginpage.png?raw=true)
+![](../master/assets/messageme_loginpage.png)
 
 * Chatroom
-![](https://github.com/[hrithikkothari1234]/RealTimeMessaging/blob/master/assets/messageme_chatroom.png?raw=true)
+![](../master/assets/messageme_chatroom.png)
 
 * Real time Chat Gif
-![](https://github.com/[hrithikkothari1234]/RealTimeMessaging/blob/master/assets/messageme_socketsgif.gif?raw=true)
+![](../master/assets/messageme_socketsgif.gif)
