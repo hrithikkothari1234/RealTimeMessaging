@@ -1,24 +1,12 @@
-# README
+## Real Time Chat Application in Ruby on Rails using Action Cable for WebSockets
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Preview:
 
-Things you may want to cover:
+* Login Page
+![](https://github.com/[hrithikkothari1234]/RealTimeMessaging/blob/master/assets/messageme_loginpage.png?raw=true)
 
-* Ruby version
+* Chatroom
+![](https://github.com/[hrithikkothari1234]/RealTimeMessaging/blob/master/assets/messageme_chatroom.png?raw=true)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Real time Chat Gif
+![](https://github.com/[hrithikkothari1234]/RealTimeMessaging/blob/master/assets/messageme_socketsgif.gif?raw=true)
